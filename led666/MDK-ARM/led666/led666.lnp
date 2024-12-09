@@ -1,0 +1,22 @@
+--cpu Cortex-M3
+"led666\startup_stm32f103xb.o"
+"led666\main.o"
+"led666\gpio.o"
+"led666\stm32f1xx_it.o"
+"led666\stm32f1xx_hal_msp.o"
+"led666\stm32f1xx_hal_gpio_ex.o"
+"led666\stm32f1xx_hal.o"
+"led666\stm32f1xx_hal_rcc.o"
+"led666\stm32f1xx_hal_rcc_ex.o"
+"led666\stm32f1xx_hal_gpio.o"
+"led666\stm32f1xx_hal_dma.o"
+"led666\stm32f1xx_hal_cortex.o"
+"led666\stm32f1xx_hal_pwr.o"
+"led666\stm32f1xx_hal_flash.o"
+"led666\stm32f1xx_hal_flash_ex.o"
+"led666\stm32f1xx_hal_exti.o"
+"led666\system_stm32f1xx.o"
+--strict --scatter "led666\led666.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "led666.map" -o led666\led666.axf
