@@ -1,0 +1,967 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.41.0.0
+Copyright (C) 2024 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 1 1, 1, LIC=32B1Q-N49NW-Z9PG9-4QSC4-VMY3D-CS9K1
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.41.0.0
+Toolchain Path:  C:\Users\29755\AppData\Local\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.22
+Assembler:       Armasm.exe V6.22
+Linker/Locator:  ArmLink.exe V6.22
+Library Manager: ArmAr.exe V6.22
+Hex Converter:   FromElf.exe V6.22
+CPU DLL:         SARMCM3.DLL V5.41.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      UL2CM3.DLL V1.164.14.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+C:\led3\wendu\AHT20.uvprojx
+Project File Date:  12/15/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.22', folder: 'C:\Users\29755\AppData\Local\Keil_v5\ARM\ARMCLANG\Bin'
+Rebuild target 'Target_1'
+assembling startup_stm32f10x_hd.s...
+Library/misc.c(99): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   99 |   assert_param(IS_NVIC_PRIORITY_GROUP(NVIC_PriorityGroup));
+      |   ^
+Library/misc.c(117): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  117 |   assert_param(IS_FUNCTIONAL_STATE(NVIC_InitStruct->NVIC_IRQChannelCmd));
+      |   ^
+Library/misc.c(159): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  159 |   assert_param(IS_NVIC_VECTTAB(NVIC_VectTab));
+      |   ^
+Library/misc.c(178): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  178 |   assert_param(IS_NVIC_LP(LowPowerMode));
+      |   ^
+Library/misc.c(202): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  202 |   assert_param(IS_SYSTICK_CLK_SOURCE(SysTick_CLKSource));
+      |   ^
+5 errors generated.
+compiling misc.c...
+Library/stm32f10x_cec.c(140): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  140 |   assert_param(IS_CEC_BIT_TIMING_ERROR_MODE(CEC_InitStruct->CEC_BitTimingMode)); 
+      |   ^
+Library/stm32f10x_cec.c(167): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  167 |   assert_param(IS_FUNCTIONAL_STATE(NewState));
+      |   ^
+Library/stm32f10x_cec.c(189): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  189 |   assert_param(IS_FUNCTIONAL_STATE(NewState));
+      |   ^
+Library/stm32f10x_cec.c(202): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  202 |   assert_param(IS_CEC_ADDRESS(CEC_OwnAddress));
+      |   ^
+Library/stm32f10x_cec.c(216): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  216 |   assert_param(IS_CEC_PRESCALER(CEC_Prescaler));
+      |   ^
+Library/stm32f10x_cec.c(265): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  265 |   assert_param(IS_FUNCTIONAL_STATE(NewState));
+      |   ^
+Library/stm32f10x_cec.c(297): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  297 |   assert_param(IS_CEC_GET_FLAG(CEC_FLAG));
+      |   ^
+Library/stm32f10x_cec.c(354): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  354 |   assert_param(IS_CEC_CLEAR_FLAG(CEC_FLAG));
+      |   ^
+Library/stm32f10x_cec.c(378): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  378 |    assert_param(IS_CEC_GET_IT(CEC_IT));
+      |    ^
+Library/stm32f10x_cec.c(413): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  413 |   assert_param(IS_CEC_GET_IT(CEC_IT));
+      |   ^
+10 errors generated.
+compiling stm32f10x_cec.c...
+Library/stm32f10x_bkp.c(137): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  137 |   assert_param(IS_BKP_TAMPER_PIN_LEVEL(BKP_TamperPinLevel));
+      |   ^
+Library/stm32f10x_bkp.c(150): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  150 |   assert_param(IS_FUNCTIONAL_STATE(NewState));
+      |   ^
+Library/stm32f10x_bkp.c(163): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  163 |   assert_param(IS_FUNCTIONAL_STATE(NewState));
+      |   ^
+Library/stm32f10x_bkp.c(184): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  184 |   assert_param(IS_BKP_RTC_OUTPUT_SOURCE(BKP_RTCOutputSource));
+      |   ^
+Library/stm32f10x_bkp.c(205): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  205 |   assert_param(IS_BKP_CALIBRATION_VALUE(CalibrationValue));
+      |   ^
+Library/stm32f10x_bkp.c(227): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  227 |   assert_param(IS_BKP_DR(BKP_DR));
+      |   ^
+Library/stm32f10x_bkp.c(246): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  246 |   assert_param(IS_BKP_DR(BKP_DR));
+      |   ^
+7 errors generated.
+compiling stm32f10x_bkp.c...
+Start/core_cm3.c(445): error: non-ASM statement in naked function is not supported
+  445 |   uint32_t result=0;
+      |   ^
+Start/core_cm3.c(442): note: attribute is here
+  442 | uint32_t __get_PSP(void) __attribute__( ( naked ) );
+      |                                           ^
+Start/core_cm3.c(465): error: parameter references not allowed in naked functions
+  465 |                   "BX  lr     \n\t" : : "r" (topOfProcStack) );
+      |                                              ^
+Start/core_cm3.c(461): note: attribute is here
+  461 | void __set_PSP(uint32_t topOfProcStack) __attribute__( ( naked ) );
+      |                                                          ^
+Start/core_cm3.c(479): error: non-ASM statement in naked function is not supported
+  479 |   uint32_t result=0;
+      |   ^
+Start/core_cm3.c(476): note: attribute is here
+  476 | uint32_t __get_MSP(void) __attribute__( ( naked ) );
+      |                                           ^
+Start/core_cm3.c(499): error: parameter references not allowed in naked functions
+  499 |                   "BX  lr     \n\t" : : "r" (topOfMainStack) );
+      |                                              ^
+Start/core_cm3.c(495): note: attribute is here
+  495 | void __set_MSP(uint32_t topOfMainStack) __attribute__( ( naked ) );
+      |                                                          ^
+4 errors generated.
+compiling core_cm3.c...
+assembling startup_stm32f10x_md.s...
+Library/stm32f10x_can.c(125): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  125 |   assert_param(IS_CAN_ALL_PERIPH(CANx));
+      |   ^
+Library/stm32f10x_can.c(159): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  159 |   assert_param(IS_CAN_ALL_PERIPH(CANx));
+      |   ^
+Library/stm32f10x_can.c(296): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  296 |   assert_param(IS_CAN_FILTER_NUMBER(CAN_FilterInitStruct->CAN_FilterNumber));
+      |   ^
+Library/stm32f10x_can.c(431): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  431 |   assert_param(IS_CAN_BANKNUMBER(CAN_BankNumber));
+      |   ^
+Library/stm32f10x_can.c(454): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  454 |   assert_param(IS_CAN_ALL_PERIPH(CANx));
+      |   ^
+Library/stm32f10x_can.c(484): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  484 |   assert_param(IS_CAN_ALL_PERIPH(CANx));
+      |   ^
+Library/stm32f10x_can.c(519): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  519 |   assert_param(IS_CAN_ALL_PERIPH(CANx));
+      |   ^
+Library/stm32f10x_can.c(594): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  594 |   assert_param(IS_CAN_ALL_PERIPH(CANx));
+      |   ^
+Library/stm32f10x_can.c(646): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  646 |   assert_param(IS_CAN_ALL_PERIPH(CANx));
+      |   ^
+Library/stm32f10x_can.c(674): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  674 |   assert_param(IS_CAN_ALL_PERIPH(CANx));
+      |   ^
+Library/stm32f10x_can.c(723): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  723 |   assert_param(IS_CAN_ALL_PERIPH(CANx));
+      |   ^
+Library/stm32f10x_can.c(747): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  747 |   assert_param(IS_CAN_ALL_PERIPH(CANx));
+      |   ^
+Library/stm32f10x_can.c(782): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  782 |   assert_param(IS_CAN_ALL_PERIPH(CANx));
+      |   ^
+Library/stm32f10x_can.c(861): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  861 |   assert_param(IS_CAN_ALL_PERIPH(CANx));
+      |   ^
+Library/stm32f10x_can.c(888): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  888 |   assert_param(IS_CAN_ALL_PERIPH(CANx));
+      |   ^
+Library/stm32f10x_can.c(927): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  927 |   assert_param(IS_CAN_ALL_PERIPH(CANx));
+      |   ^
+Library/stm32f10x_can.c(951): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  951 |   assert_param(IS_CAN_ALL_PERIPH(CANx));
+      |   ^
+Library/stm32f10x_can.c(971): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  971 |   assert_param(IS_CAN_ALL_PERIPH(CANx));
+      |   ^
+Library/stm32f10x_can.c(1006): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+ 1006 |   assert_param(IS_CAN_ALL_PERIPH(CANx));
+      |   ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+compiling stm32f10x_can.c...
+assembling startup_stm32f10x_xl.s...
+assembling startup_stm32f10x_ld_vl.s...
+assembling startup_stm32f10x_cl.s...
+Library/stm32f10x_adc.c(182): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  182 |   assert_param(IS_ADC_ALL_PERIPH(ADCx));
+      |   ^
+Library/stm32f10x_adc.c(223): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  223 |   assert_param(IS_ADC_ALL_PERIPH(ADCx));
+      |   ^
+Library/stm32f10x_adc.c(302): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  302 |   assert_param(IS_ADC_ALL_PERIPH(ADCx));
+      |   ^
+Library/stm32f10x_adc.c(327): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  327 |   assert_param(IS_ADC_DMA_PERIPH(ADCx));
+      |   ^
+Library/stm32f10x_adc.c(357): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  357 |   assert_param(IS_ADC_ALL_PERIPH(ADCx));
+      |   ^
+Library/stm32f10x_adc.c(382): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  382 |   assert_param(IS_ADC_ALL_PERIPH(ADCx));
+      |   ^
+Library/stm32f10x_adc.c(396): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  396 |   assert_param(IS_ADC_ALL_PERIPH(ADCx));
+      |   ^
+Library/stm32f10x_adc.c(420): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  420 |   assert_param(IS_ADC_ALL_PERIPH(ADCx));
+      |   ^
+Library/stm32f10x_adc.c(434): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  434 |   assert_param(IS_ADC_ALL_PERIPH(ADCx));
+      |   ^
+Library/stm32f10x_adc.c(460): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  460 |   assert_param(IS_ADC_ALL_PERIPH(ADCx));
+      |   ^
+Library/stm32f10x_adc.c(485): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  485 |   assert_param(IS_ADC_ALL_PERIPH(ADCx));
+      |   ^
+Library/stm32f10x_adc.c(514): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  514 |   assert_param(IS_ADC_ALL_PERIPH(ADCx));
+      |   ^
+Library/stm32f10x_adc.c(539): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  539 |   assert_param(IS_ADC_ALL_PERIPH(ADCx));
+      |   ^
+Library/stm32f10x_adc.c(594): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  594 |   assert_param(IS_ADC_ALL_PERIPH(ADCx));
+      |   ^
+Library/stm32f10x_adc.c(689): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  689 |   assert_param(IS_ADC_ALL_PERIPH(ADCx));
+      |   ^
+Library/stm32f10x_adc.c(711): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  711 |   assert_param(IS_ADC_ALL_PERIPH(ADCx));
+      |   ^
+Library/stm32f10x_adc.c(737): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  737 |   assert_param(IS_ADC_ALL_PERIPH(ADCx));
+      |   ^
+Library/stm32f10x_adc.c(763): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  763 |   assert_param(IS_ADC_ALL_PERIPH(ADCx));
+      |   ^
+Library/stm32f10x_adc.c(803): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  803 |   assert_param(IS_ADC_ALL_PERIPH(ADCx));
+      |   ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+compiling stm32f10x_adc.c...
+assembling startup_stm32f10x_md_vl.s...
+assembling startup_stm32f10x_hd_vl.s...
+compiling system_stm32f10x.c...
+assembling startup_stm32f10x_ld.s...
+compiling stm32f10x_crc.c...
+Library/stm32f10x_dac.c(121): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  121 |   assert_param(IS_DAC_TRIGGER(DAC_InitStruct->DAC_Trigger));
+      |   ^
+Library/stm32f10x_dac.c(176): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  176 |   assert_param(IS_DAC_CHANNEL(DAC_Channel));
+      |   ^
+Library/stm32f10x_dac.c(236): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  236 |   assert_param(IS_DAC_CHANNEL(DAC_Channel));
+      |   ^
+Library/stm32f10x_dac.c(263): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  263 |   assert_param(IS_DAC_CHANNEL(DAC_Channel));
+      |   ^
+Library/stm32f10x_dac.c(287): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  287 |   assert_param(IS_FUNCTIONAL_STATE(NewState));
+      |   ^
+Library/stm32f10x_dac.c(317): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  317 |   assert_param(IS_DAC_CHANNEL(DAC_Channel));
+      |   ^
+Library/stm32f10x_dac.c(347): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  347 |   assert_param(IS_DAC_ALIGN(DAC_Align));
+      |   ^
+Library/stm32f10x_dac.c(372): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  372 |   assert_param(IS_DAC_ALIGN(DAC_Align));
+      |   ^
+Library/stm32f10x_dac.c(401): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  401 |   assert_param(IS_DAC_ALIGN(DAC_Align));
+      |   ^
+Library/stm32f10x_dac.c(435): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  435 |   assert_param(IS_DAC_CHANNEL(DAC_Channel));
+      |   ^
+10 errors generated.
+compiling stm32f10x_dac.c...
+Library/stm32f10x_dbgmcu.c(137): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  137 |   assert_param(IS_DBGMCU_PERIPH(DBGMCU_Periph));
+      |   ^
+1 error generated.
+compiling stm32f10x_dbgmcu.c...
+Library/stm32f10x_dma.c(111): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  111 |   assert_param(IS_DMA_ALL_PERIPH(DMAy_Channelx));
+      |   ^
+Library/stm32f10x_dma.c(207): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  207 |   assert_param(IS_DMA_ALL_PERIPH(DMAy_Channelx));
+      |   ^
+Library/stm32f10x_dma.c(297): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  297 |   assert_param(IS_DMA_ALL_PERIPH(DMAy_Channelx));
+      |   ^
+Library/stm32f10x_dma.c(329): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  329 |   assert_param(IS_DMA_ALL_PERIPH(DMAy_Channelx));
+      |   ^
+Library/stm32f10x_dma.c(356): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  356 |   assert_param(IS_DMA_ALL_PERIPH(DMAy_Channelx));
+      |   ^
+Library/stm32f10x_dma.c(374): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  374 |   assert_param(IS_DMA_ALL_PERIPH(DMAy_Channelx));
+      |   ^
+Library/stm32f10x_dma.c(439): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  439 |   assert_param(IS_DMA_GET_FLAG(DMAy_FLAG));
+      |   ^
+Library/stm32f10x_dma.c(526): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  526 |   assert_param(IS_DMA_CLEAR_FLAG(DMAy_FLAG));
+      |   ^
+Library/stm32f10x_dma.c(601): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  601 |   assert_param(IS_DMA_GET_IT(DMAy_IT));
+      |   ^
+Library/stm32f10x_dma.c(687): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  687 |   assert_param(IS_DMA_CLEAR_IT(DMAy_IT));
+      |   ^
+10 errors generated.
+compiling stm32f10x_dma.c...
+Library/stm32f10x_exti.c(106): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  106 |   assert_param(IS_EXTI_MODE(EXTI_InitStruct->EXTI_Mode));
+      |   ^
+Library/stm32f10x_exti.c(174): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  174 |   assert_param(IS_EXTI_LINE(EXTI_Line));
+      |   ^
+Library/stm32f10x_exti.c(190): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  190 |   assert_param(IS_GET_EXTI_LINE(EXTI_Line));
+      |   ^
+Library/stm32f10x_exti.c(212): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  212 |   assert_param(IS_EXTI_LINE(EXTI_Line));
+      |   ^
+Library/stm32f10x_exti.c(229): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  229 |   assert_param(IS_GET_EXTI_LINE(EXTI_Line));
+      |   ^
+Library/stm32f10x_exti.c(252): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  252 |   assert_param(IS_EXTI_LINE(EXTI_Line));
+      |   ^
+6 errors generated.
+compiling stm32f10x_exti.c...
+Library/stm32f10x_flash.c(259): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  259 |   assert_param(IS_FLASH_LATENCY(FLASH_Latency));
+      |   ^
+Library/stm32f10x_flash.c(284): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  284 |   assert_param(IS_FLASH_HALFCYCLEACCESS_STATE(FLASH_HalfCycleAccess));
+      |   ^
+Library/stm32f10x_flash.c(303): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  303 |   assert_param(IS_FLASH_PREFETCHBUFFER_STATE(FLASH_PrefetchBuffer));
+      |   ^
+Library/stm32f10x_flash.c(423): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  423 |   assert_param(IS_FLASH_ADDRESS(Page_Address));
+      |   ^
+Library/stm32f10x_flash.c(687): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  687 |   assert_param(IS_FLASH_ADDRESS(Address));
+      |   ^
+Library/stm32f10x_flash.c(862): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  862 |   assert_param(IS_FLASH_ADDRESS(Address));
+      |   ^
+Library/stm32f10x_flash.c(933): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  933 |   assert_param(IS_OB_DATA_ADDRESS(Address));
+      |   ^
+Library/stm32f10x_flash.c(982): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  982 |   assert_param(IS_FLASH_WRPROT_PAGE(FLASH_Pages));
+      |   ^
+Library/stm32f10x_flash.c(1053): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+ 1053 |   assert_param(IS_FUNCTIONAL_STATE(NewState));
+      |   ^
+Library/stm32f10x_flash.c(1123): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+ 1123 |   assert_param(IS_OB_IWDG_SOURCE(OB_IWDG));
+      |   ^
+Library/stm32f10x_flash.c(1325): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+ 1325 |   assert_param(IS_FLASH_IT(FLASH_IT)); 
+      |   ^
+Library/stm32f10x_flash.c(1402): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+ 1402 |   assert_param(IS_FLASH_GET_FLAG(FLASH_FLAG)) ;
+      |   ^
+Library/stm32f10x_flash.c(1462): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+ 1462 |   assert_param(IS_FLASH_CLEAR_FLAG(FLASH_FLAG)) ;
+      |   ^
+13 errors generated.
+compiling stm32f10x_flash.c...
+Library/stm32f10x_fsmc.c(105): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  105 |   assert_param(IS_FSMC_NORSRAM_BANK(FSMC_Bank));
+      |   ^
+Library/stm32f10x_fsmc.c(132): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  132 |   assert_param(IS_FSMC_NAND_BANK(FSMC_Bank));
+      |   ^
+Library/stm32f10x_fsmc.c(179): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  179 |   assert_param(IS_FSMC_NORSRAM_BANK(FSMC_NORSRAMInitStruct->FSMC_Bank));
+      |   ^
+Library/stm32f10x_fsmc.c(267): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  267 |   assert_param( IS_FSMC_NAND_BANK(FSMC_NANDInitStruct->FSMC_Bank));
+      |   ^
+Library/stm32f10x_fsmc.c(331): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  331 |   assert_param(IS_FSMC_WAIT_FEATURE(FSMC_PCCARDInitStruct->FSMC_Waitfeature));
+      |   ^
+Library/stm32f10x_fsmc.c(477): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  477 |   assert_param(IS_FSMC_NORSRAM_BANK(FSMC_Bank));
+      |   ^
+Library/stm32f10x_fsmc.c(503): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  503 |   assert_param(IS_FSMC_NAND_BANK(FSMC_Bank));
+      |   ^
+Library/stm32f10x_fsmc.c(540): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  540 |   assert_param(IS_FUNCTIONAL_STATE(NewState));
+      |   ^
+Library/stm32f10x_fsmc.c(566): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  566 |   assert_param(IS_FSMC_NAND_BANK(FSMC_Bank));
+      |   ^
+Library/stm32f10x_fsmc.c(639): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  639 |   assert_param(IS_FSMC_IT_BANK(FSMC_Bank));
+      |   ^
+Library/stm32f10x_fsmc.c(703): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  703 |   assert_param(IS_FSMC_GETFLAG_BANK(FSMC_Bank));
+      |   ^
+Library/stm32f10x_fsmc.c(750): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  750 |   assert_param(IS_FSMC_GETFLAG_BANK(FSMC_Bank));
+      |   ^
+Library/stm32f10x_fsmc.c(788): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  788 |   assert_param(IS_FSMC_IT_BANK(FSMC_Bank));
+      |   ^
+Library/stm32f10x_fsmc.c(836): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  836 |   assert_param(IS_FSMC_IT_BANK(FSMC_Bank));
+      |   ^
+14 errors generated.
+compiling stm32f10x_fsmc.c...
+Library/stm32f10x_gpio.c(111): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  111 |   assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+      |   ^
+Library/stm32f10x_gpio.c(178): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  178 |   assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+      |   ^
+Library/stm32f10x_gpio.c(286): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  286 |   assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+      |   ^
+Library/stm32f10x_gpio.c(308): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  308 |   assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+      |   ^
+Library/stm32f10x_gpio.c(324): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  324 |   assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+      |   ^
+Library/stm32f10x_gpio.c(346): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  346 |   assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+      |   ^
+Library/stm32f10x_gpio.c(361): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  361 |   assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+      |   ^
+Library/stm32f10x_gpio.c(377): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  377 |   assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+      |   ^
+Library/stm32f10x_gpio.c(397): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  397 |   assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+      |   ^
+Library/stm32f10x_gpio.c(420): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  420 |   assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+      |   ^
+Library/stm32f10x_gpio.c(437): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  437 |   assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+      |   ^
+Library/stm32f10x_gpio.c(466): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  466 |   assert_param(IS_GPIO_EVENTOUT_PORT_SOURCE(GPIO_PortSource));
+      |   ^
+Library/stm32f10x_gpio.c(486): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  486 |   assert_param(IS_FUNCTIONAL_STATE(NewState));
+      |   ^
+Library/stm32f10x_gpio.c(554): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  554 |   assert_param(IS_GPIO_REMAP(GPIO_Remap));
+      |   ^
+Library/stm32f10x_gpio.c(613): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  613 |   assert_param(IS_GPIO_EXTI_PORT_SOURCE(GPIO_PortSource));
+      |   ^
+Library/stm32f10x_gpio.c(632): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  632 |   assert_param(IS_GPIO_ETH_MEDIA_INTERFACE(GPIO_ETH_MediaInterface)); 
+      |   ^
+16 errors generated.
+compiling stm32f10x_gpio.c...
+Library/stm32f10x_i2c.c(165): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  165 |   assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+      |   ^
+Library/stm32f10x_i2c.c(198): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  198 |   assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+      |   ^
+Library/stm32f10x_i2c.c(325): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  325 |   assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+      |   ^
+Library/stm32f10x_i2c.c(349): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  349 |   assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+      |   ^
+Library/stm32f10x_i2c.c(373): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  373 |   assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+      |   ^
+Library/stm32f10x_i2c.c(397): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  397 |   assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+      |   ^
+Library/stm32f10x_i2c.c(421): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  421 |   assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+      |   ^
+Library/stm32f10x_i2c.c(445): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  445 |   assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+      |   ^
+Library/stm32f10x_i2c.c(470): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  470 |   assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+      |   ^
+Library/stm32f10x_i2c.c(495): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  495 |   assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+      |   ^
+Library/stm32f10x_i2c.c(519): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  519 |   assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+      |   ^
+Library/stm32f10x_i2c.c(548): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  548 |   assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+      |   ^
+Library/stm32f10x_i2c.c(573): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  573 |   assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+      |   ^
+Library/stm32f10x_i2c.c(586): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  586 |   assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+      |   ^
+Library/stm32f10x_i2c.c(604): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  604 |   assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+      |   ^
+Library/stm32f10x_i2c.c(641): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  641 |   assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+      |   ^
+Library/stm32f10x_i2c.c(661): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  661 |   assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+      |   ^
+Library/stm32f10x_i2c.c(699): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  699 |   assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+      |   ^
+Library/stm32f10x_i2c.c(727): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  727 |   assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+      |   ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+compiling stm32f10x_i2c.c...
+Library/stm32f10x_iwdg.c(95): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   95 |   assert_param(IS_IWDG_WRITE_ACCESS(IWDG_WriteAccess));
+      |   ^
+Library/stm32f10x_iwdg.c(115): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  115 |   assert_param(IS_IWDG_PRESCALER(IWDG_Prescaler));
+      |   ^
+Library/stm32f10x_iwdg.c(128): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  128 |   assert_param(IS_IWDG_RELOAD(Reload));
+      |   ^
+Library/stm32f10x_iwdg.c(165): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  165 |   assert_param(IS_IWDG_FLAG(IWDG_FLAG));
+      |   ^
+4 errors generated.
+compiling stm32f10x_iwdg.c...
+Library/stm32f10x_pwr.c(127): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  127 |   assert_param(IS_FUNCTIONAL_STATE(NewState));
+      |   ^
+Library/stm32f10x_pwr.c(140): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  140 |   assert_param(IS_FUNCTIONAL_STATE(NewState));
+      |   ^
+Library/stm32f10x_pwr.c(162): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  162 |   assert_param(IS_PWR_PVD_LEVEL(PWR_PVDLevel));
+      |   ^
+Library/stm32f10x_pwr.c(181): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  181 |   assert_param(IS_FUNCTIONAL_STATE(NewState));
+      |   ^
+Library/stm32f10x_pwr.c(201): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  201 |   assert_param(IS_PWR_REGULATOR(PWR_Regulator));
+      |   ^
+Library/stm32f10x_pwr.c(265): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  265 |   assert_param(IS_PWR_GET_FLAG(PWR_FLAG));
+      |   ^
+Library/stm32f10x_pwr.c(290): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  290 |   assert_param(IS_PWR_CLEAR_FLAG(PWR_FLAG));
+      |   ^
+7 errors generated.
+compiling stm32f10x_pwr.c...
+Library/stm32f10x_rcc.c(273): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  273 |   assert_param(IS_RCC_HSE(RCC_HSE));
+      |   ^
+Library/stm32f10x_rcc.c(338): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  338 |   assert_param(IS_RCC_CALIBRATION_VALUE(HSICalibrationValue));
+      |   ^
+Library/stm32f10x_rcc.c(357): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  357 |   assert_param(IS_FUNCTIONAL_STATE(NewState));
+      |   ^
+Library/stm32f10x_rcc.c(383): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  383 |   assert_param(IS_RCC_PLL_SOURCE(RCC_PLLSource));
+      |   ^
+Library/stm32f10x_rcc.c(404): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  404 |   assert_param(IS_FUNCTIONAL_STATE(NewState));
+      |   ^
+Library/stm32f10x_rcc.c(568): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  568 |   assert_param(IS_RCC_SYSCLK_SOURCE(RCC_SYSCLKSource));
+      |   ^
+Library/stm32f10x_rcc.c(612): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  612 |   assert_param(IS_RCC_HCLK(RCC_SYSCLK));
+      |   ^
+Library/stm32f10x_rcc.c(638): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  638 |   assert_param(IS_RCC_PCLK(RCC_HCLK));
+      |   ^
+Library/stm32f10x_rcc.c(664): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  664 |   assert_param(IS_RCC_PCLK(RCC_HCLK));
+      |   ^
+Library/stm32f10x_rcc.c(703): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  703 |   assert_param(IS_RCC_IT(RCC_IT));
+      |   ^
+Library/stm32f10x_rcc.c(731): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  731 |   assert_param(IS_RCC_USBCLK_SOURCE(RCC_USBCLKSource));
+      |   ^
+Library/stm32f10x_rcc.c(770): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  770 |   assert_param(IS_RCC_ADCCLK(RCC_PCLK2));
+      |   ^
+Library/stm32f10x_rcc.c(832): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  832 |   assert_param(IS_RCC_LSE(RCC_LSE));
+      |   ^
+Library/stm32f10x_rcc.c(865): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  865 |   assert_param(IS_FUNCTIONAL_STATE(NewState));
+      |   ^
+Library/stm32f10x_rcc.c(882): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  882 |   assert_param(IS_RCC_RTCCLK_SOURCE(RCC_RTCCLKSource));
+      |   ^
+Library/stm32f10x_rcc.c(896): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  896 |   assert_param(IS_FUNCTIONAL_STATE(NewState));
+      |   ^
+Library/stm32f10x_rcc.c(1067): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+ 1067 |   assert_param(IS_RCC_AHB_PERIPH(RCC_AHBPeriph));
+      |   ^
+Library/stm32f10x_rcc.c(1098): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+ 1098 |   assert_param(IS_RCC_APB2_PERIPH(RCC_APB2Periph));
+      |   ^
+Library/stm32f10x_rcc.c(1129): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+ 1129 |   assert_param(IS_RCC_APB1_PERIPH(RCC_APB1Periph));
+      |   ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+compiling stm32f10x_rcc.c...
+Library/stm32f10x_rtc.c(93): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   93 |   assert_param(IS_RTC_IT(RTC_IT));  
+      |   ^
+Library/stm32f10x_rtc.c(163): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  163 |   assert_param(IS_RTC_PRESCALER(PrescalerValue));
+      |   ^
+Library/stm32f10x_rtc.c(249): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  249 |   assert_param(IS_RTC_GET_FLAG(RTC_FLAG)); 
+      |   ^
+Library/stm32f10x_rtc.c(276): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  276 |   assert_param(IS_RTC_CLEAR_FLAG(RTC_FLAG)); 
+      |   ^
+Library/stm32f10x_rtc.c(295): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  295 |   assert_param(IS_RTC_GET_IT(RTC_IT)); 
+      |   ^
+Library/stm32f10x_rtc.c(321): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  321 |   assert_param(IS_RTC_IT(RTC_IT));  
+      |   ^
+6 errors generated.
+compiling stm32f10x_rtc.c...
+Library/stm32f10x_sdio.c(186): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  186 |   assert_param(IS_SDIO_CLOCK_EDGE(SDIO_InitStruct->SDIO_ClockEdge));
+      |   ^
+Library/stm32f10x_sdio.c(238): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  238 |   assert_param(IS_FUNCTIONAL_STATE(NewState));
+      |   ^
+Library/stm32f10x_sdio.c(254): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  254 |   assert_param(IS_SDIO_POWER_STATE(SDIO_PowerState));
+      |   ^
+Library/stm32f10x_sdio.c(310): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  310 |   assert_param(IS_SDIO_IT(SDIO_IT));
+      |   ^
+Library/stm32f10x_sdio.c(334): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  334 |   assert_param(IS_FUNCTIONAL_STATE(NewState));
+      |   ^
+Library/stm32f10x_sdio.c(351): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  351 |   assert_param(IS_SDIO_CMD_INDEX(SDIO_CmdInitStruct->SDIO_CmdIndex));
+      |   ^
+Library/stm32f10x_sdio.c(417): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  417 |   assert_param(IS_SDIO_RESP(SDIO_RESP));
+      |   ^
+Library/stm32f10x_sdio.c(436): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  436 |   assert_param(IS_SDIO_DATA_LENGTH(SDIO_DataInitStruct->SDIO_DataLength));
+      |   ^
+Library/stm32f10x_sdio.c(532): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  532 |   assert_param(IS_FUNCTIONAL_STATE(NewState));
+      |   ^
+Library/stm32f10x_sdio.c(546): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  546 |   assert_param(IS_FUNCTIONAL_STATE(NewState));
+      |   ^
+Library/stm32f10x_sdio.c(562): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  562 |   assert_param(IS_SDIO_READWAIT_MODE(SDIO_ReadWaitMode));
+      |   ^
+Library/stm32f10x_sdio.c(576): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  576 |   assert_param(IS_FUNCTIONAL_STATE(NewState));
+      |   ^
+Library/stm32f10x_sdio.c(590): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  590 |   assert_param(IS_FUNCTIONAL_STATE(NewState));
+      |   ^
+Library/stm32f10x_sdio.c(604): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  604 |   assert_param(IS_FUNCTIONAL_STATE(NewState));
+      |   ^
+Library/stm32f10x_sdio.c(617): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  617 |   assert_param(IS_FUNCTIONAL_STATE(NewState));
+      |   ^
+Library/stm32f10x_sdio.c(630): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  630 |   assert_param(IS_FUNCTIONAL_STATE(NewState));
+      |   ^
+Library/stm32f10x_sdio.c(671): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  671 |   assert_param(IS_SDIO_FLAG(SDIO_FLAG));
+      |   ^
+Library/stm32f10x_sdio.c(707): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  707 |   assert_param(IS_SDIO_CLEAR_FLAG(SDIO_FLAG));
+      |   ^
+Library/stm32f10x_sdio.c(748): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  748 |   assert_param(IS_SDIO_GET_IT(SDIO_IT));
+      |   ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+compiling stm32f10x_sdio.c...
+Library/stm32f10x_spi.c(122): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  122 |   assert_param(IS_SPI_ALL_PERIPH(SPIx));
+      |   ^
+Library/stm32f10x_spi.c(163): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  163 |   assert_param(IS_SPI_ALL_PERIPH(SPIx));   
+      |   ^
+Library/stm32f10x_spi.c(227): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  227 |   assert_param(IS_SPI_23_PERIPH(SPIx));
+      |   ^
+Library/stm32f10x_spi.c(430): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  430 |   assert_param(IS_SPI_ALL_PERIPH(SPIx));
+      |   ^
+Library/stm32f10x_spi.c(454): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  454 |   assert_param(IS_SPI_23_PERIPH(SPIx));
+      |   ^
+Library/stm32f10x_spi.c(486): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  486 |   assert_param(IS_SPI_ALL_PERIPH(SPIx));
+      |   ^
+Library/stm32f10x_spi.c(524): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  524 |   assert_param(IS_SPI_ALL_PERIPH(SPIx));
+      |   ^
+Library/stm32f10x_spi.c(550): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  550 |   assert_param(IS_SPI_ALL_PERIPH(SPIx));
+      |   ^
+Library/stm32f10x_spi.c(566): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  566 |   assert_param(IS_SPI_ALL_PERIPH(SPIx));
+      |   ^
+Library/stm32f10x_spi.c(584): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  584 |   assert_param(IS_SPI_ALL_PERIPH(SPIx));
+      |   ^
+Library/stm32f10x_spi.c(608): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  608 |   assert_param(IS_SPI_ALL_PERIPH(SPIx));
+      |   ^
+Library/stm32f10x_spi.c(634): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  634 |   assert_param(IS_SPI_ALL_PERIPH(SPIx));
+      |   ^
+Library/stm32f10x_spi.c(650): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  650 |   assert_param(IS_SPI_ALL_PERIPH(SPIx));
+      |   ^
+Library/stm32f10x_spi.c(666): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  666 |   assert_param(IS_SPI_ALL_PERIPH(SPIx));
+      |   ^
+Library/stm32f10x_spi.c(693): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  693 |   assert_param(IS_SPI_ALL_PERIPH(SPIx));
+      |   ^
+Library/stm32f10x_spi.c(717): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  717 |   assert_param(IS_SPI_ALL_PERIPH(SPIx));
+      |   ^
+Library/stm32f10x_spi.c(735): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  735 |   assert_param(IS_SPI_ALL_PERIPH(SPIx));
+      |   ^
+Library/stm32f10x_spi.c(770): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  770 |   assert_param(IS_SPI_ALL_PERIPH(SPIx));
+      |   ^
+Library/stm32f10x_spi.c(807): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  807 |   assert_param(IS_SPI_ALL_PERIPH(SPIx));
+      |   ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+compiling stm32f10x_spi.c...
+Library/stm32f10x_tim.c(125): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  125 |   assert_param(IS_TIM_ALL_PERIPH(TIMx)); 
+      |   ^
+Library/stm32f10x_tim.c(231): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  231 |   assert_param(IS_TIM_ALL_PERIPH(TIMx)); 
+      |   ^
+Library/stm32f10x_tim.c(284): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  284 |   assert_param(IS_TIM_LIST8_PERIPH(TIMx));
+      |   ^
+Library/stm32f10x_tim.c(367): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  367 |   assert_param(IS_TIM_LIST6_PERIPH(TIMx)); 
+      |   ^
+Library/stm32f10x_tim.c(449): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  449 |   assert_param(IS_TIM_LIST3_PERIPH(TIMx)); 
+      |   ^
+Library/stm32f10x_tim.c(528): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  528 |   assert_param(IS_TIM_LIST3_PERIPH(TIMx)); 
+      |   ^
+Library/stm32f10x_tim.c(590): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  590 |   assert_param(IS_TIM_CHANNEL(TIM_ICInitStruct->TIM_Channel));  
+      |   ^
+Library/stm32f10x_tim.c(659): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  659 |   assert_param(IS_TIM_LIST6_PERIPH(TIMx));
+      |   ^
+Library/stm32f10x_tim.c(715): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  715 |   assert_param(IS_TIM_LIST2_PERIPH(TIMx));
+      |   ^
+Library/stm32f10x_tim.c(809): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  809 |   assert_param(IS_TIM_ALL_PERIPH(TIMx));
+      |   ^
+Library/stm32f10x_tim.c(834): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  834 |   assert_param(IS_TIM_LIST2_PERIPH(TIMx));
+      |   ^
+Library/stm32f10x_tim.c(875): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  875 |   assert_param(IS_TIM_ALL_PERIPH(TIMx));
+      |   ^
+Library/stm32f10x_tim.c(912): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  912 |   assert_param(IS_TIM_ALL_PERIPH(TIMx));
+      |   ^
+Library/stm32f10x_tim.c(940): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  940 |   assert_param(IS_TIM_LIST4_PERIPH(TIMx));
+      |   ^
+Library/stm32f10x_tim.c(967): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  967 |   assert_param(IS_TIM_LIST9_PERIPH(TIMx));
+      |   ^
+Library/stm32f10x_tim.c(992): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  992 |   assert_param(IS_TIM_LIST6_PERIPH(TIMx));
+      |   ^
+Library/stm32f10x_tim.c(1011): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+ 1011 |   assert_param(IS_TIM_LIST6_PERIPH(TIMx));
+      |   ^
+Library/stm32f10x_tim.c(1039): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+ 1039 |   assert_param(IS_TIM_LIST6_PERIPH(TIMx));
+      |   ^
+Library/stm32f10x_tim.c(1080): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+ 1080 |   assert_param(IS_TIM_LIST3_PERIPH(TIMx));
+      |   ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+compiling stm32f10x_tim.c...
+Library/stm32f10x_usart.c(133): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  133 |   assert_param(IS_USART_ALL_PERIPH(USARTx));
+      |   ^
+Library/stm32f10x_usart.c(184): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  184 |   assert_param(IS_USART_ALL_PERIPH(USARTx));
+      |   ^
+Library/stm32f10x_usart.c(306): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  306 |   assert_param(IS_USART_123_PERIPH(USARTx));
+      |   ^
+Library/stm32f10x_usart.c(354): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  354 |   assert_param(IS_USART_ALL_PERIPH(USARTx));
+      |   ^
+Library/stm32f10x_usart.c(393): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  393 |   assert_param(IS_USART_ALL_PERIPH(USARTx));
+      |   ^
+Library/stm32f10x_usart.c(451): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  451 |   assert_param(IS_USART_ALL_PERIPH(USARTx));
+      |   ^
+Library/stm32f10x_usart.c(479): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  479 |   assert_param(IS_USART_ALL_PERIPH(USARTx));
+      |   ^
+Library/stm32f10x_usart.c(502): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  502 |   assert_param(IS_USART_ALL_PERIPH(USARTx));
+      |   ^
+Library/stm32f10x_usart.c(521): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  521 |   assert_param(IS_USART_ALL_PERIPH(USARTx));
+      |   ^
+Library/stm32f10x_usart.c(550): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  550 |   assert_param(IS_USART_ALL_PERIPH(USARTx));
+      |   ^
+Library/stm32f10x_usart.c(569): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  569 |   assert_param(IS_USART_ALL_PERIPH(USARTx));
+      |   ^
+Library/stm32f10x_usart.c(595): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  595 |   assert_param(IS_USART_ALL_PERIPH(USARTx));
+      |   ^
+Library/stm32f10x_usart.c(612): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  612 |   assert_param(IS_USART_ALL_PERIPH(USARTx));
+      |   ^
+Library/stm32f10x_usart.c(628): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  628 |   assert_param(IS_USART_ALL_PERIPH(USARTx));
+      |   ^
+Library/stm32f10x_usart.c(644): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  644 |   assert_param(IS_USART_123_PERIPH(USARTx));
+      |   ^
+Library/stm32f10x_usart.c(664): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  664 |   assert_param(IS_USART_ALL_PERIPH(USARTx));
+      |   ^
+Library/stm32f10x_usart.c(683): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  683 |   assert_param(IS_USART_123_PERIPH(USARTx));
+      |   ^
+Library/stm32f10x_usart.c(708): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  708 |   assert_param(IS_USART_123_PERIPH(USARTx));  
+      |   ^
+Library/stm32f10x_usart.c(734): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  734 |   assert_param(IS_USART_ALL_PERIPH(USARTx));
+      |   ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+compiling stm32f10x_usart.c...
+Library/stm32f10x_wwdg.c(122): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  122 |   assert_param(IS_WWDG_PRESCALER(WWDG_Prescaler));
+      |   ^
+Library/stm32f10x_wwdg.c(142): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  142 |   assert_param(IS_WWDG_WINDOW_VALUE(WindowValue));
+      |   ^
+Library/stm32f10x_wwdg.c(173): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  173 |   assert_param(IS_WWDG_COUNTER(Counter));
+      |   ^
+Library/stm32f10x_wwdg.c(188): error: call to undeclared function 'assert_param'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  188 |   assert_param(IS_WWDG_COUNTER(Counter));
+      |   ^
+4 errors generated.
+compiling stm32f10x_wwdg.c...
+User/main.c(2): error: 'usart.h' file not found
+    2 | #include "usart.h"
+      |          ^~~~~~~~~
+1 error generated.
+compiling main.c...
+compiling stm32f10x_it.c...
+User/bsp_i2c.c(1): warning: In file included from...
+User\bsp_i2c.h(6): error: 'usart.h' file not found
+    6 | #include "usart.h"
+      |          ^~~~~~~~~
+1 error generated.
+compiling bsp_i2c.c...
+User/delay.c(43): error: call to undeclared function 'SysTick_CLKSourceConfig'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   43 |         SysTick_CLKSourceConfig(SysTick_CLKSource_HCLK_Div8);   //????<A8><AA>a2?<A8><BA><A1><C0>?<A8><AE>  HCLK/8
+      |         ^
+User/delay.c(43): error: use of undeclared identifier 'SysTick_CLKSource_HCLK_Div8'; did you mean 'SysTick_CLKSourceConfig'?
+   43 |         SysTick_CLKSourceConfig(SysTick_CLKSource_HCLK_Div8);   //????<A8><AA>a2?<A8><BA><A1><C0>?<A8><AE>  HCLK/8
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                 SysTick_CLKSourceConfig
+User/delay.c(43): note: 'SysTick_CLKSourceConfig' declared here
+   43 |         SysTick_CLKSourceConfig(SysTick_CLKSource_HCLK_Div8);   //????<A8><AA>a2?<A8><BA><A1><C0>?<A8><AE>  HCLK/8
+      |         ^
+2 errors generated.
+compiling delay.c...
+User/sys.c(17): error: call to undeclared function 'NVIC_PriorityGroupConfig'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   17 |     NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2);     //<A8><A6><A8><A8>??NVIC?D??<A1><A4>?<A1><C1><A8><A6>2:2???<A8><A4>??<A8><AE>??<A8><A8>??<A1><EA>?2???<A8><AC><A8><AE>|<A8><AE>??<A8><A8>??
+      |     ^
+User/sys.c(17): error: use of undeclared identifier 'NVIC_PriorityGroup_2'
+   17 |     NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2);     //<A8><A6><A8><A8>??NVIC?D??<A1><A4>?<A1><C1><A8><A6>2:2???<A8><A4>??<A8><AE>??<A8><A8>??<A1><EA>?2???<A8><AC><A8><AE>|<A8><AE>??<A8><A8>??
+      |                              ^
+2 errors generated.
+compiling sys.c...
+User/ustart.c(2): error: 'usart.h' file not found
+    2 | #include "usart.h"
+      |          ^~~~~~~~~
+1 error generated.
+compiling ustart.c...
+".\Objects\AHT20.axf" - 276 Error(s), 0 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.3.0.pack
+                Keil::STM32F1xx_DFP@2.3.0
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  C:/Users/29755/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include
+
+<h2>Collection of Component Files used:</h2>
+Target not created.
+Build Time Elapsed:  00:00:05
+</pre>
+</body>
+</html>
