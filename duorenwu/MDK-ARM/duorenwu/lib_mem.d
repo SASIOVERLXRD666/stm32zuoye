@@ -1,0 +1,11 @@
+duorenwu\lib_mem.o: uC-LIB\lib_mem.c
+duorenwu\lib_mem.o: .\uC-LIB\lib_mem.h
+duorenwu\lib_mem.o: .\uC-CPU\ARM-Cortex-M3\RealView\cpu.h
+duorenwu\lib_mem.o: .\uC-CPU\cpu_def.h
+duorenwu\lib_mem.o: .\uC-CONFIG\cpu_cfg.h
+duorenwu\lib_mem.o: .\uC-CPU\cpu_core.h
+duorenwu\lib_mem.o: .\uC-LIB\lib_def.h
+duorenwu\lib_mem.o: .\uC-LIB\lib_mem.h
+duorenwu\lib_mem.o: .\uC-LIB\lib_str.h
+duorenwu\lib_mem.o: .\uC-LIB\lib_ascii.h
+duorenwu\lib_mem.o: .\uC-CONFIG\lib_cfg.h

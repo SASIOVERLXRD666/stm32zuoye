@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"flashrom\startup_stm32f103xb.o"
+"flashrom\main.o"
+"flashrom\gpio.o"
+"flashrom\stm32f1xx_it.o"
+"flashrom\stm32f1xx_hal_msp.o"
+"flashrom\flash.o"
+"flashrom\stm32f1xx_hal_gpio_ex.o"
+"flashrom\stm32f1xx_hal.o"
+"flashrom\stm32f1xx_hal_rcc.o"
+"flashrom\stm32f1xx_hal_rcc_ex.o"
+"flashrom\stm32f1xx_hal_gpio.o"
+"flashrom\stm32f1xx_hal_dma.o"
+"flashrom\stm32f1xx_hal_cortex.o"
+"flashrom\stm32f1xx_hal_pwr.o"
+"flashrom\stm32f1xx_hal_flash.o"
+"flashrom\stm32f1xx_hal_flash_ex.o"
+"flashrom\stm32f1xx_hal_exti.o"
+"flashrom\system_stm32f1xx.o"
+--strict --scatter "FlashRom\FlashRom.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "FlashRom.map" -o FlashRom\FlashRom.axf

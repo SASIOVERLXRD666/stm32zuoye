@@ -1,0 +1,12 @@
+duorenwu\lib_math.o: uC-LIB\lib_math.c
+duorenwu\lib_math.o: .\uC-LIB\lib_math.h
+duorenwu\lib_math.o: .\uC-CPU\ARM-Cortex-M3\RealView\cpu.h
+duorenwu\lib_math.o: .\uC-CPU\cpu_def.h
+duorenwu\lib_math.o: .\uC-CONFIG\cpu_cfg.h
+duorenwu\lib_math.o: .\uC-CPU\cpu_core.h
+duorenwu\lib_math.o: .\uC-LIB\lib_def.h
+duorenwu\lib_math.o: .\uC-LIB\lib_mem.h
+duorenwu\lib_math.o: .\uC-CPU\cpu_core.h
+duorenwu\lib_math.o: .\uC-CONFIG\lib_cfg.h
+duorenwu\lib_math.o: .\uC-LIB\lib_str.h
+duorenwu\lib_math.o: .\uC-LIB\lib_ascii.h
